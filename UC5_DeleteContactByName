@@ -1,0 +1,14 @@
+mysql> DELETE FROM addressbook WHERE firstName = 'Mack' AND lastName = 'Trump';
+Query OK, 1 row affected (0.01 sec)
+
+mysql> SELECT * FROM addressbook;
++-----------+----------+----------------+-----------+------------+--------+------------+------------------+
+| firstName | lastName | address        | city      | state      | zip    | phoneNO    | email            |
++-----------+----------+----------------+-----------+------------+--------+------------+------------------+
+| Devid     | Warner   | random_address | London    | Maharastra | 431520 | 1234567890 | devid@gmail.com  |
+| Kevin     | Peterson | random_address | Vizag     | AP         | 530032 | 0987654321 | Kevin@gmail.com  |
+| Robert    | Bosch    | random_address | KOlkata   | WB         | 700001 | 2890654321 | robert@gmail.com |
+| Rock      | Bush     | random_address | Bengalore | Karnataka  | 560002 | 5678903456 | rock@gmail.com   |
++-----------+----------+----------------+-----------+------------+--------+------------+------------------+
+4 rows in set (0.00 sec)
+
