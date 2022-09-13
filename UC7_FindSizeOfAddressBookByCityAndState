@@ -1,0 +1,15 @@
+mysql> SELECT COUNT(firstName) AS contacts_count FROM addressbook WHERE city = 'Vizag';
++----------------+
+| contacts_count |
++----------------+
+|              1 |
++----------------+
+1 row in set (0.00 sec)
+
+mysql> SELECT COUNT(firstName) AS contacts_count FROM addressbook WHERE state = 'WB';
++----------------+
+| contacts_count |
++----------------+
+|              1 |
++----------------+
+1 row in set (0.00 sec)
