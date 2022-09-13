@@ -1,1 +1,15 @@
+mysql> SELECT firstName, lastName FROM addressbook WHERE city = 'Vizag';
++-----------+----------+
+| firstName | lastName |
++-----------+----------+
+| Kevin     | Peterson |
++-----------+----------+
+1 row in set (0.00 sec)
 
+mysql> SELECT firstName, lastName FROM addressbook WHERE state = 'WB';
++-----------+----------+
+| firstName | lastName |
++-----------+----------+
+| Robert    | Bosch    |
++-----------+----------+
+1 row in set (0.00 sec)
