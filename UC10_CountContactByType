@@ -1,0 +1,23 @@
+mysql> SELECT COUNT(firstName) AS contacts_count_by_type FROM addressbook WHERE type = 'Profession';
++------------------------+
+| contacts_count_by_type |
++------------------------+
+|                      1 |
++------------------------+
+1 row in set (0.01 sec)
+
+mysql> SELECT COUNT(firstName) AS contacts_count_by_type FROM addressbook WHERE type = 'Friends';
++------------------------+
+| contacts_count_by_type |
++------------------------+
+|                      2 |
++------------------------+
+1 row in set (0.00 sec)
+
+mysql> SELECT COUNT(firstName) AS contacts_count_by_type FROM addressbook WHERE type = 'Family';
++------------------------+
+| contacts_count_by_type |
++------------------------+
+|                      1 |
++------------------------+
+1 row in set (0.00 sec)
