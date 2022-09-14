@@ -1,0 +1,42 @@
+mysql> SELECT * FROM addressbook;
++-----------+----------+------------+----------------+-----------+------------+--------+------------+------------------+
+| firstName | lastName | type_name  | address        | city      | state      | zip    | phoneNO    | email            |
++-----------+----------+------------+----------------+-----------+------------+--------+------------+------------------+
+| Devid     | Warner   | Friends    | random_address | London    | Maharastra | 431520 | 1234567890 | devid@gmail.com  |
+| Kevin     | Peterson | Friends    | random_address | Vizag     | AP         | 530032 | 0987654321 | Kevin@gmail.com  |
+| Robert    | Bosch    | Family     | random_address | KOlkata   | WB         | 700001 | 2890654321 | robert@gmail.com |
+| Rock      | Bush     | Profession | random_address | Bengalore | Karnataka  | 560002 | 5678903456 | rock@gmail.com   |
+| Jack      | Jonas    | Friends    | random_address | Kolkata   | WB         | 700007 | 907654321  | jack@gmail.com   |
+| Jack      | Jonas    | Family     | random_address | Kolkata   | WB         | 700007 | 907654321  | jack@gmail.com   |
++-----------+----------+------------+----------------+-----------+------------+--------+------------+------------------+
+6 rows in set (0.00 sec)
+
+mysql> SELECT type_name FROM addressbook WHERE city = 'Kolkata';
++-----------+
+| type_name |
++-----------+
+| Family    |
+| Friends   |
+| Family    |
++-----------+
+3 rows in set (0.00 sec)
+
+mysql> SELECT firstName FROM addressbook WHERE city = 'Kolkata';
++-----------+
+| firstName |
++-----------+
+| Robert    |
+| Jack      |
+| Jack      |
++-----------+
+3 rows in set (0.00 sec)
+
+mysql> SELECT firstName FROM addressbook WHERE state = 'WB';
++-----------+
+| firstName |
++-----------+
+| Robert    |
+| Jack      |
+| Jack      |
++-----------+
+3 rows in set (0.00 sec)
